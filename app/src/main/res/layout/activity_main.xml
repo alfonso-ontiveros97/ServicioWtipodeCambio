@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIPO DE CAMBIO"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/Tvtitulo"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de cambio en un periodo determinado"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:id="@+id/texto"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:hint="Fecha de inicio"
+        android:inputType="date"
+        android:id="@+id/etInicio"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:hint="Fecha de termino"
+        android:inputType="date"
+        android:id="@+id/etTermino"
+        />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="Cargar tipo de cambio"
+       android:id="@+id/btnCargar"
+       />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvtipoInicial"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TvtipoFinal"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+    </ScrollView>
+
+
+</LinearLayout>
